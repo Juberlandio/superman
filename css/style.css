@@ -1,0 +1,252 @@
+
+/* Global */
+html, 
+body {
+margin: 0px;
+padding: 0px;
+}
+h1,
+h2,
+h3,
+ul,
+p{
+margin: 0px;
+}
+ul {
+margin: 0px;
+padding: 0px;
+}
+a {   
+font: inherit;
+color: inherit;
+}
+img {
+height: auto;
+display: block;
+max-width: 100%;
+}
+::-webkit-scrollbar {
+width: 7px;
+background-color: rgb(35, 38, 41);
+}
+::-webkit-scrollbar-thumb {
+background-color: var(--cor-p1);
+border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+
+/* Componentes */
+.container {
+box-sizing: border-box;
+max-width: 1060px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+.center {
+margin: auto;
+text-align: center;
+}
+
+/* Cores */
+:root {
+--cor-0: #ffffff;
+--cor-1: #FCFCFC;
+--cor-2: #FAFAFA;
+--cor-3: #F8F8F8;
+--cor-4: #cccccc;
+--cor-5: #b2b2b2;
+--cor-6: #9c9c9c;
+--cor-7: #717171;
+--cor-8: #595959;
+--cor-9: #404040;
+--cor-10: #2e2e2e;
+--cor-11: #1a1a1a;
+--cor-12: #0e0e0e;
+--cor-13: #000000;
+--cor-p1: #4711C1;
+}
+.cor-0 {
+color: var(--cor-0);
+}
+.cor-1 {
+color: var(--cor-1);
+}
+.cor-2 {
+color: var(--cor-2);
+}
+.cor-3 {
+color: var(--cor-3);
+}
+.cor-4 {
+color: var(--cor-4);
+}
+.cor-5 {
+color: var(--cor-5);
+}
+.cor-6 {
+color: var(--cor-6);
+}
+.cor-7 {
+color: var(--cor-7);
+}
+.cor-8 {
+color: var(--cor-8);
+}
+.cor-9 {
+color: var(--cor-9);
+}
+.cor-10 {
+color: var(--cor-10);
+}
+.cor-11 {
+color: var(--cor-11);
+}
+.cor-12 {
+color: var(--cor-12);
+}
+.cor-13 {
+color: var(--cor-13);
+}
+.cor-p1 {
+color: var(--cor-p1);
+}
+
+/* Tipografia */
+.font-1-xxl {
+font: 700 1.5rem/0.83 sans-serif;
+}
+.font-1-xl {
+font: 500 1.375rem/0.83 sans-serif;
+}
+.font-1-l {
+font: 400 1rem/1.875 sans-serif;
+}
+.font-1-s {
+font: 400 1rem/0.83 sans-serif;
+}
+
+/* Cabeçalho */
+.cabecalho-bg {
+background: var(--cor-p1);
+}
+.cabecalho {
+width: 100%;
+height: 66px;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+}
+.cabecalho h1{
+padding: 10px;
+}
+.cabecalho .menu {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+list-style: none;
+padding-left: 20px;
+}
+.cabecalho .menu li a {
+background: var(--cor-0);
+padding: 5px 12px;
+border-radius: 20px;
+cursor: pointer;
+text-decoration: none;
+}
+.cabecalho .menu li + li{
+padding-left: 15px;
+}
+@media (max-width: 600px) {
+.cabecalho {
+justify-content: center;
+align-items: center;
+padding: 10px;
+height: auto;
+}
+.cabecalho .menu {
+justify-content: center;
+padding: 20px 0px 20px 20px;
+}
+}
+
+/* Introdução */
+.introducao-bg {
+width: 100%;
+height: 1012px;
+background-image: url(../img/capa.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Sinopse */
+.sinopse h2 {
+padding-top: 35px;
+padding-bottom: 40px;
+}
+.sinopse p {
+text-align: justify;
+text-indent: 40px;
+}
+
+/* Disponibilidade */
+.dispo h2 {
+padding-top: 35px;
+padding-bottom: 40px;
+}
+.dispo img {
+width: 100%;
+height: 588px;
+}
+.dispo p {
+padding-top: 38px;
+text-indent: 40px;
+}
+
+/* Imagens Serie */
+.imagens-serie p:first-child {
+padding-top: 74px;
+padding-bottom: 30px;
+}
+.imagens-serie .imagens {
+display: flex;
+flex-wrap: nowrap;
+justify-content: start;
+align-items: center;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space:nowrap;
+}
+.imagens-serie .imagens img{
+height: 210px;
+width: 315px;
+margin: 10px;
+box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 0.5);
+}
+.imagens-serie p:last-child {
+padding-top: 32px;
+padding-bottom: 16px;
+}
+
+/* Rodape */
+.rodape-bg {
+background: var(--cor-p1);
+}
+.rodape {
+width: 100%;
+height: 42px;
+}
+.rodape p{
+width: 100%;
+height: 42px;
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-items: center;
+}
