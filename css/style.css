@@ -36,6 +36,15 @@ border-radius: 30px;
 ::-webkit-scrollbar-track {
 background-color: transparent;
 }
+.js [data-anime="scroll"] {
+opacity: 0;
+transform: translate3d(-30px, 0, 0);
+transition: .3s;
+}
+.js [data-anime="scroll"].ativo {
+opacity: 1;
+transform: translate3d(0px, 0, 0);
+}
 
 /* Componentes */
 .container {
@@ -225,7 +234,7 @@ white-space:nowrap;
 }
 .imagens-serie .imagens img{
 height: 210px;
-width: 315px;
+width: calc(20% + 100px);
 margin: 10px;
 box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 0.5);
 }

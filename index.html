@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Superman & Lois</title>
   <meta name="description" content="Desenvolvedor Front End e UX/UI Designer">
   <link rel="icon" href="./Favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./css/style.css" as="style">
@@ -14,12 +14,12 @@
 
 <body>
   <header class="cabecalho-bg">
-    <div class="cabecalho container">
+    <div class="cabecalho container" data-menu="suave">
       <h1 class="font-1-xl cor-0">Superman & Lois</h1>
       <nav>
         <ul class="menu font-1-s cor-p1">
-          <li><a href="">Sinopse</a></li>
-          <li><a href="">Disponibilidade</a></li>
+          <li><a href="#sinopse">Sinopse</a></li>
+          <li><a href="#disponibilidade">Disponibilidade</a></li>
         </ul>
       </nav>
     </div>
@@ -27,20 +27,20 @@
   <main>
     <section class="introducao-bg">
     </section>
-    <article class="sinopse-bg">
+    <article class="sinopse-bg" id="sinopse" data-anime="scroll">
       <div class="sinopse container">
         <h2 class="font-1-xxl cor-13 center">Sinopse</h2>
         <p class="font-1-l cor-13">Após anos enfrentando supervilões megalomaníacos, monstros destruidores e invasores alienígenas, o Homem de Aço e a famosa jornalista Lois Lane retornam à idílica cidade de Smallville para criar os filhos adolescentes, Jonathan e Jordan. Na estreia da série, Superman e Lois retornam a Smallville para enfrentar um de seus maiores desafios: criar dois meninos sendo pais que trabalham.</p>
       </div>
     </article>
-    <section class="dispo-bg">
+    <section class="dispo-bg" id="disponibilidade" data-anime="scroll">
       <div class="dispo container">
         <h2 class="font-1-xxl cor-13 center">Disponibilidade</h2>
         <img src="img/tv.jpg" alt="Imgem da HBO, e Warner Bros.">
         <p class="font-1-l cor-13">Superman & Lois já conta com duas temporadas e está sendo transmitido pelo canal de TV Warner Channel e no serviço de Streaming HBO Max. Os novos episódios da série saem aos sábados.</p>
       </div>
     </section>
-    <section class="imagens-serie-bg">
+    <section class="imagens-serie-bg"  data-anime="scroll">
       <div class="imagens-serie container">
           <p class="font-1-l cor-13">Confira abaixo algumas imagens da série:</p>
           <div class="imagens">
@@ -59,6 +59,7 @@
         <p class="font-1-l cor-0">HBO Max - 2021</p>
     </div>
   </footer>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
