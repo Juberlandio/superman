@@ -1,6 +1,8 @@
-import initscrollsuave from './modules/scroll-suave.js';
-import initscrollanimacao from './modules/scroll-animacao.js';
+import ScrollSuave from './modules/scroll-suave.js';
+import ScrollAnima from './modules/scroll-anima.js';
 
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
+scrollSuave.init();
 
-initscrollsuave();
-initscrollanimacao();
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
